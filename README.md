@@ -17,7 +17,7 @@ You will perform:
 #### Data Modeling
 
 Inspect the CSVs and sketch out an ERD of the tables.
-<img width=“500” alt=“” src="">
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/QuickDBD-ERD.png">
 
 
 #### Data Engineering
