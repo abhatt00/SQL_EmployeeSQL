@@ -1,4 +1,5 @@
 --Create tables and import data--
+-- For each csv file that contains data, create a table in which to import that data that contains a column name and a column value to match the csv.
 create table "EMPLOYEES" (
     "EMP_NO" INTEGER not null,
     "BIRTH_DATE" DATE not null,
