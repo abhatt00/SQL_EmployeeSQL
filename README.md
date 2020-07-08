@@ -36,18 +36,31 @@ Once you have a complete database, do the following:
 <img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query1.png">
 <img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query1_results.png">
 
-
 2. List employees who were hired in 1986.
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query2.png">
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query2_results.png">
 
 3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query3.png">
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query3_results.png">
 
 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query4.png">
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query4_results.png">
 
 5. List all employees whose first name is "Hercules" and last names begin with "B."
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query5.png">
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query5_results.png">
 
 6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query6.png">
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query6_results.png">
 
 7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query7.png">
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query7_results.png">
 
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query8.png">
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query8_results.png">
 
