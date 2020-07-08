@@ -33,6 +33,9 @@ Inspect the CSVs and sketch out an ERD of the tables.
 Once you have a complete database, do the following:
 
 1. List the following details of each employee: employee number, last name, first name, gender, and salary.
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query1.png">
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/table_schema_code.png">
+
 
 2. List employees who were hired in 1986.
 
