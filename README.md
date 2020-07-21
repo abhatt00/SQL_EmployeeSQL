@@ -71,3 +71,7 @@ Once you have a complete database, do the following:
 10. List all employees whose first name begins with "A" in order by their last name.
 <img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query10.png">
 <img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query10_results.png">
+
+11. List the following details of each employee: employee number, last name, first name, gender, and salary. Order the list by highest salary to lowest.
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query11.png">
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query11_results.png">

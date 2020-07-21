@@ -114,3 +114,15 @@ select
 from "EMPLOYEES"
 where ("FIRST_NAME" like 'A%')
 ORDER BY "LAST_NAME" ASC ;
+
+-- 11. List the following details of each employee: employee number, last name, first name, gender, and salary. Order the list by highest salary to lowest.
+SELECT
+	EMP."EMP_NO",
+	EMP."LAST_NAME",
+	EMP."FIRST_NAME",
+	EMP."GENDER",
+	SAL."SALARY"
+FROM "EMPLOYEES" as EMP
+LEFT JOIN "SALARIES" as SAL
+	ON (EMP."EMP_NO" = SAL."EMP_NO")
+ORDER BY "SALARY" DESC;
