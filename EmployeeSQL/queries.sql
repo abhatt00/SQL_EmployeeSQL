@@ -5,9 +5,12 @@ SELECT
 	EMP."FIRST_NAME",
 	EMP."GENDER",
 	SAL."SALARY"
-FROM "EMPLOYEES" as EMP
+-- 	grabbing columns from respective tables
+FROM "EMPLOYEES" as EMP 
+-- bring everything from the employees table and add on from the salaries table.
 LEFT JOIN "SALARIES" as SAL
 	on (EMP."EMP_NO" = SAL."EMP_NO");
+-- 	match primary key on "employees" table to foreign key in "salaries" table
 	
 
 --2. List employees who were hired in 1986.
@@ -126,3 +129,33 @@ FROM "EMPLOYEES" as EMP
 LEFT JOIN "SALARIES" as SAL
 	ON (EMP."EMP_NO" = SAL."EMP_NO")
 ORDER BY "SALARY" DESC;
+
+-- 12. List the following details of all employees: department number, department name, the manager's employee number, the manager's last name, the employee's first and last name, and the employee's salary. 
+-- Order the list first by highest salary to lowest, then order the list by department name.
+SELECT
+	DEPT."DEPT_NO",
+	DEPT."DEPT_NAME",
+	DM."EMP_NO" AS MANAGER_NUM,
+	EMP_M."LAST_NAME" AS MAN_LAST_NAME,
+	EMP."EMP_NO",
+	EMP."LAST_NAME",
+	EMP."FIRST_NAME",
+	SAL."SALARY"
+FROM "EMPLOYEES" AS EMP
+LEFT JOIN "SALARIES" AS SAL
+	ON (EMP."EMP_NO" = SAL."EMP_NO")
+LEFT JOIN "DEPT_EMP" AS DEPT_EMP
+	ON (EMP."EMP_NO" = DEPT_EMP."EMP_NO")
+LEFT JOIN "DEPARTMENTS" AS DEPT
+	ON (DEPT_EMP."DEPT_NO" = DEPT."DEPT_NO")
+LEFT JOIN "DEPT_MANAGER" AS DM
+	ON (DEPT."DEPT_NO" = DM."DEPT_NO")
+LEFT JOIN "EMPLOYEES" AS EMP_M
+	ON (DM."EMP_NO" = EMP_M."EMP_NO")
+WHERE (DM."TO_DATE" = '9999-01-01')
+ORDER BY "SALARY" DESC, "DEPT_NAME" ASC;
+
+-- 13. List all employees that have "Engineer" in their title along with their: department number, department name, the manager's employee number, last name, first name, and salary. Order the list first by highest salary to lowest.
+
+-- 14. List all employees who have an annual salary higher than $65,000.
+
