@@ -155,7 +155,43 @@ LEFT JOIN "EMPLOYEES" AS EMP_M
 WHERE (DM."TO_DATE" = '9999-01-01')
 ORDER BY "SALARY" DESC, "DEPT_NAME" ASC;
 
--- 13. List all employees that have "Engineer" in their title along with their: department number, department name, the manager's employee number, last name, first name, and salary. Order the list first by highest salary to lowest.
+-- 13. List all employees that have "Engineer" in their title along with their: department number, department name, last name, first name, and salary. Order the list by highest salary to lowest.
+SELECT
+	TITLES."TITLES",
+	DEPT."DEPT_NO",
+	DEPT."DEPT_NAME",
+	EMP."LAST_NAME",
+	EMP."FIRST_NAME",
+	SAL."SALARY"
+FROM "EMPLOYEES" AS EMP
+LEFT JOIN "SALARIES" AS SAL
+	ON (EMP."EMP_NO" = SAL."EMP_NO")
+LEFT JOIN "DEPT_EMP" AS DEPT_EMP
+	ON (EMP."EMP_NO" = DEPT_EMP."EMP_NO")
+LEFT JOIN "TITLES" AS TITLES
+	ON (EMP."EMP_NO" = TITLES."EMP_NO")
+LEFT JOIN "DEPARTMENTS" AS DEPT
+	ON (DEPT_EMP."DEPT_NO" = DEPT."DEPT_NO")
+LEFT JOIN "DEPT_MANAGER" AS DM
+	ON (DEPT."DEPT_NO" = DM."DEPT_NO")
+LEFT JOIN "EMPLOYEES" AS EMP_M
+	ON (DM."EMP_NO" = EMP_M."EMP_NO")
+WHERE (TITLES."TITLES" LIKE '%Engineer%')
+ORDER BY "SALARY" DESC;
 
--- 14. List all employees who have an annual salary higher than $65,000.
-
+-- 14. List all employees who have an annual salary higher than $65,000 and their titles, employee numbers, full names, gender, and hire date.
+SELECT
+	TITLES."TITLES",
+	EMP."EMP_NO", 
+	EMP."LAST_NAME", 
+	EMP."FIRST_NAME", 
+	EMP."GENDER",
+	EMP."HIRE_DATE",
+	SAL."SALARY"
+FROM "EMPLOYEES" as EMP
+LEFT JOIN "SALARIES" as SAL
+	on (EMP."EMP_NO" = SAL."EMP_NO")
+LEFT JOIN "TITLES" AS TITLES
+	ON (EMP."EMP_NO" = TITLES."EMP_NO")
+WHERE (SAL."SALARY" > ('65000'))
+ORDER BY EMP."HIRE_DATE" ASC;

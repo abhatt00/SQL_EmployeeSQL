@@ -77,7 +77,13 @@ Once you have a complete database, do the following:
 <img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query11_results.png">
 
 12. List the following details of all employees: department number, department name, the manager's employee number, last name, first name, and salary. Order the list first by highest salary to lowest, then order the list by department name.
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query12.png">
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query12_results.png">
 
 13. List all employees that have "Engineer" in their title along with their: department number, department name, the manager's employee number, last name, first name, and salary. Order the list first by highest salary to lowest.
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query13.png">
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query13_results.png">
 
-14. List all employees who have an annual salary higher than $65,000.
+14. List all employees who have an annual salary higher than $65,000 and their titles, employee numbers, full names, gender, and hire date.
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query14.png">
+<img width=“500” alt=“” src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/query_results/query14_results.png">
