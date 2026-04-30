@@ -242,7 +242,9 @@ EmployeeSQL/
 ## Author
 
 **Abhishek Bhatt**
+
 Originally completed: 2019 — UC Irvine Data Analytics Bootcamp (PostgreSQL)
+
 Rebuilt and expanded: 2026 — Microsoft SQL Server 2022
 
 [LinkedIn](https://www.linkedin.com/in/asbhatt12/) | [GitHub](https://github.com/abhatt00)
