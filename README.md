@@ -142,7 +142,7 @@ ORDER BY t.name, i.name;
 13. List all employees that have "Engineer" in their title along with their department number, department name, the manager's employee number, last name, first name, and salary. Order by highest salary to lowest.
 14. List all employees who have an annual salary higher than $65,000 along with their titles, employee numbers, full names, gender, and hire date.
 
-> *Query code and result screenshots to be added as each query is completed.*
+<img width=“500” alt='BULK INSERT Success' src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/docs/screenshots/verify bulk table INSERT results.png">
 
 ---
 
