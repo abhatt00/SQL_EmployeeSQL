@@ -119,11 +119,17 @@ ORDER BY t.name, i.name;
 
 **What will be built:**
 
-- SSIS package for CSV imports in correct dependency order
+- T-SQL BULK INSERT script to load all six CSV files in correct dependency order
 - Rebuilt original analysis queries in T-SQL
 - Extended analysis queries beyond the original bootcamp scope
 - Stored procedures with parameters for reusable query logic
 - Views that simplify complex joins for downstream Tableau reporting
+
+**Import method:** T-SQL `BULK INSERT` statements executed directly in SSMS.
+CSVs were preprocessed to ensure dates are in `YYYY-MM-DD` format before import.
+`FIELDQUOTE = '"'` was used to strip double quotes wrapping all field values in
+the source CSV files. `CODEPAGE = 'RAW'` handled character encoding cleanly.
+Tables are loaded in parent-first dependency order to satisfy FK constraints.
 
 **Original analysis questions to be answered:**
 
