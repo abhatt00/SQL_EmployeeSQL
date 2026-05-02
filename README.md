@@ -16,8 +16,7 @@ This project is designed to demonstrate skills across the full data lifecycle: d
 |---|---|
 | Microsoft SQL Server 2022 | Primary database engine |
 | SQL Server Management Studio (SSMS) 21.3.7 | Database management and query execution |
-| SQL Server Integration Services (SSIS) | CSV import pipeline (ETL) |
-| Visual Studio 2022 | SSIS package development |
+| SQL Server BULK INSERT | CSV import pipeline (ETL) |
 | Amazon RDS for SQL Server | Cloud-hosted database environment |
 | Tableau Desktop | Dashboard and visualization development |
 | Tableau Public | Dashboard publishing |
@@ -198,7 +197,6 @@ To reproduce this database locally, follow these steps in order:
 1. **Prerequisites**
    - Microsoft SQL Server 2022 (Developer or Express edition)
    - SQL Server Management Studio (SSMS)
-   - Visual Studio 2022 with SSIS extension (for Phase 2 CSV import)
 
 2. **Clone this repository**
    ```bash
@@ -237,7 +235,6 @@ EmployeeSQL/
 │   ├── verify_schema.sql
 │   ├── analysis_queries.sql          (Phase 2)
 │   └── views_and_procedures.sql      (Phase 2)
-├── ssis/                             (Phase 2)
 ├── tableau/                          (Phase 5)
 └── docs/
     └── screenshots/
