@@ -130,6 +130,15 @@ CSVs were preprocessed to ensure dates are in `YYYY-MM-DD` format before import.
 the source CSV files. `CODEPAGE = 'RAW'` handled character encoding cleanly.
 Tables are loaded in parent-first dependency order to satisfy FK constraints.
 
+**Data quality fixes applied during import:**
+- Staging tables used for all six files to allow data transformation before
+  inserting into typed final tables
+- `LTRIM(RTRIM())` applied to all text fields to strip leading and trailing spaces
+- `REPLACE(column, CHAR(13), '')` and `REPLACE(column, CHAR(10), '')` applied
+  to the last column of each file to strip hidden Windows line ending characters
+  that were causing date conversion failures
+- Safety `DROP` checks added for all staging tables to handle interrupted runs
+
 **Original analysis questions to be answered:**
 
 1. List the following details of each employee: employee number, last name, first name, gender, and salary.
