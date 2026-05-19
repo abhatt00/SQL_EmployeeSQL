@@ -114,7 +114,7 @@ ORDER BY t.name, i.name;
 
 ---
 
-### Phase 2 — Data Import and Analysis Queries - In Progress
+### Phase 2 — Data Import and Analysis Queries - Complete
 
 **What will be built:**
 
@@ -156,7 +156,22 @@ Tables are loaded in parent-first dependency order to satisfy FK constraints.
 13. List all employees that have "Engineer" in their title along with their department number, department name, the manager's employee number, last name, first name, and salary. Order by highest salary to lowest.
 14. List all employees who have an annual salary higher than $65,000 along with their titles, employee numbers, full names, gender, and hire date.
 
-<img width=“500” alt='BULK INSERT Success' src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/docs/screenshots/verify bulk table INSERT results.png">
+**Key T-SQL concepts demonstrated:**
+- Multi-table JOINs across six related tables
+- INNER JOIN vs LEFT JOIN applied correctly based on query intent
+- `ROW_NUMBER() OVER (PARTITION BY ... ORDER BY ...)` window function
+  for isolating most recent records per employee
+- CTEs for readable, modular query logic
+- `GROUP BY` with `COUNT` for frequency analysis
+- `LIKE` with wildcard patterns for text filtering
+- String concatenation for formatted name output
+- Sentinel date value filtering (`TO_DATE = '9999-01-01'`)
+
+<img width=“300” alt='BULK INSERT Success' src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/docs/screenshots/verify bulk table INSERT results.png">
+<img width=“300” alt='Query 3 Results' src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/docs/screenshots/query 3 results.png">
+<img width=“300” alt='Query 8 Results' src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/docs/screenshots/query 8 results.png">
+<img width=“300” alt='Query 12 Results' src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/docs/screenshots/query 12 results.png">
+<img width=“300” alt='Query 14 Results' src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/docs/screenshots/query 14 results.png">
 
 ---
 
@@ -239,7 +254,7 @@ EmployeeSQL/
 │   ├── employees.csv
 │   ├── salaries.csv
 │   └── titles.csv
-├── sql/
+├── SQL_EmployeeSQL/
 │   ├── create table schema_2026.sql
 │   ├── verify_schema.sql
 │   ├── analysis_queries.sql          (Phase 2)
