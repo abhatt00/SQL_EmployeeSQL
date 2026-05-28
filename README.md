@@ -173,6 +173,23 @@ Tables are loaded in parent-first dependency order to satisfy FK constraints.
 <img width=“300” alt='Query 12 Results' src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/docs/screenshots/query 12 results.png">
 <img width=“300” alt='Query 14 Results' src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/docs/screenshots/query 14 results.png">
 
+**Views created:**
+- `vw_EmployeeDetails` — flat join across all six tables; primary Tableau data source
+- `vw_DepartmentManagers` — full manager history per department with salary
+- `vw_SalaryAnalysis` — salary records with title, department, gender, and years of service
+
+**Stored procedures created:**
+- `usp_GetEmployeesByDepartment` — returns current employees for a given department
+- `usp_GetEmployeesBySalaryThreshold` — returns employees earning above a salary threshold
+- `usp_GetDepartmentSummary` — returns headcount, avg, min, and max salary for a department
+
+**Key concepts demonstrated:**
+- `CREATE OR ALTER` for idempotent object creation
+- `SET NOCOUNT ON` to suppress row count messages in procedures
+- Parameterized stored procedures with typed input parameters
+- Sentinel date filtering inside procedures for current-record queries
+- `CAST` to DECIMAL for accurate `AVG()` on integer salary columns
+
 ---
 
 ### Phase 3 — DBA Infrastructure 📋 Planned
