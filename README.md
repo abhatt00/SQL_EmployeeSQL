@@ -190,6 +190,9 @@ Tables are loaded in parent-first dependency order to satisfy FK constraints.
 - Sentinel date filtering inside procedures for current-record queries
 - `CAST` to DECIMAL for accurate `AVG()` on integer salary columns
 
+<img width=“300” alt='Views and Stored Procedures Confirmation' src="https://github.com/abhatt00/SQL_EmployeeSQL/blob/master/docs/screenshots/create_views_stored_procedures_confirmation.png">
+
+
 ---
 
 ### Phase 3 — DBA Infrastructure 📋 Planned
